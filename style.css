@@ -444,11 +444,21 @@ footer li {
     font-size: 65%;
   }
 
-  .simply-countdown > .simply-section {
-    padding: 60px;
-    margin: 5px;
+  .simply-countdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
   }
-
+  
+  .simply-countdown > .simply-section {
+    flex: 1 1 calc(50% - 10px); 
+    max-width: 150px; 
+    text-align: center;
+  }
+  .navbar {
+    display: none;
+  }
   .mynavbar .nav-link {
     font-size: 2rem;
     text-align: center;
@@ -464,15 +474,25 @@ footer li {
   }
 }
 
-/* mobile phone */
 @media (max-width: 576px) {
   html {
     font-size: 60%;
   }
+  .navbar {
+    display: none;
+  }
+
+  .simply-countdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px; 
+  }
 
   .simply-countdown > .simply-section {
-    padding: 45px;
-    margin: 3px;
+    flex: 0 1 calc(50% - 5px); 
+    max-width: 120px; 
+    text-align: center;
   }
 
   .timeline li .timeline-image {
@@ -492,4 +512,5 @@ footer li {
   .timeline li .timeline-panel::after {
     top: 31px;
   }
+  
 }
