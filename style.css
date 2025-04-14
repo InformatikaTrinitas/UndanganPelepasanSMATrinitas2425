@@ -1,6 +1,6 @@
 :root {
   --pink: #800000;
-  --bg: #0a0a0a;
+  --bg: #FCEEF2;
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
 
@@ -70,7 +70,7 @@ body {
 
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
-  font-family: 'Helvetica World', cursive;
+  font-family: 'Helvetica World', sans-serif;
   font-size: 3.2rem;
   font-weight: bold;
 }
@@ -538,9 +538,10 @@ footer li {
 }
 
 .undangan-left .date {
-  font-size: 48px;
+  font-size: 24px;
   font-weight: bold;
   color: #1e3c2d;
+  margin: 30px 0;
 }
 
 .undangan-left .month {
